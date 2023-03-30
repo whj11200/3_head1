@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아 집 가고 싶다 ㅎ</title>
+</head>
+<style>
+  
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+        font-size: 25px;
+}
+    a:hover{
+        color: rgb(227, 243, 9);
+        
+    }
+  header {
+    overflow: hidden;
+    height: 100px; background-color: rgba(0, 0, 0, 0.404);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+    text-align: center;
+   
+    
+  }
+h1 {
+    text-align: left;
+}
+  header.show {animation: headerShow 1s forwards; }
+header.hide {animation: headerHide 1s forwards; }
+  
+  
+  
+
+  
+ 
+section{
+    background-image: url(./imges/car.jfif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-color: black;
+  
+    
+}
+
+
+section:nth-child(3){
+    background-image: url(./imges/caring.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+  
+}
+section:nth-child(4){
+  background-image: url(./imges/img.jpg );
+    text-align: center;
+    background-color: rgb(75, 73, 73);
+    height: 100vh;
+}
+button{
+  position: fixed;
+}
+
+
+    
+  
+  header.down {
+    top: -100px;
+  }
+  header.up{
+    top: 0px;
+  }
+  
+  footer {
+    background-color: rgb(167, 164, 164); height: 200px;
+  }
+  
+  body { margin: 0; padding: 0;}
+  header.over{
+    border-left-color: rgba(100, 104, 109, 0.329);
+  }
+  header.over h1 a{
+    color: black;
+  }
+
+  nav {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+h3{
+ 
+  color: white;
+  text-align: left;
+}
+p{
+  color: yellowgreen;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 70px;
+        
+       
+}
+b {
+    
+    color: yellowgreen;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 35px;
+        font-size: 15px;
+        
+        
+}
+    b:hover{
+        color: rgb(227, 243, 9);
+        
+    }
+    div {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
+
+
+d{
+  font-family: Castellar;
+  font-weight: bold;
+  font-size: 60px;
+  position: absolute;   
+  color: #ececec;
+  margin-top: 5%;
+  margin-left: 12%;
+}
+
+i {
+  font-weight: lighter;
+  font-size: 25px;
+  position: absolute; 
+  color: #ececec;
+  margin-top: 43%;
+  margin-left: 12%;
+}
+
+
+
+
+q {
+  font-weight: lighter;
+  font-size: 30px;
+  position: absolute; 
+  color: #ececec;
+  border-top: 10px;
+  
+}
+m{
+  font-family: Castellar;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;   
+  color: #ececec;
+  margin-top: 21.7%;
+  margin-left: 13.5%;
+}
+n{
+  font-family: Castellar;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;   
+  color: #ececec;
+  margin-top: 43%;
+  margin-left: 12%;
+}
+button{
+  position: fixed;   
+}
+
+
+video {
+  width: 100%;
+  height: 100%;
+ 
+ 
+}
+
+
+    </style>
+<body>      
+ 
+    <header id="header">
+      
+        
+
+      
+        <h1><a href="#"><img src="imges/CH2.png"></a></h1> <nav>
+          <a href="#">차량목록</a>
+          <a href="#">대여서비스</a>
+          <a href="#">서비스 센터</a>
+          <a href="#">고객센터</a>
+          
+          
+          </nav>
+          <div>
+          <b href="#">찾아오는길</b>
+          <b href="#">내계정</b>
+          <b href="#">에이 진짜오겠어?</b>
+          <p href="#"><img src="./imges/icon2-removebg-preview.png"></p>
+          </div>
+       
+        </div>
+        
+        
+        
+    </header>
+ 
+    <section>
+      <d>CAMARO</d>
+      <i>가격: 5,027원</i>
+    </section>
+    
+    <section>
+      <m>Change the New CAMARO</m>
+      
+      
+    
+    </section>
+    <section>
+      <video  autoplay loop muted >
+        <source src="./imges/6세대 카마로ss 시네마틱 필름 ⧸ 6th GEN CAMARO SS CINEMATIC FILM (NIGHT RUN).mp4" type="video/mp4">
+      </video>
+    
+    </section>
+   
+    <footer>
+      <img src="./imges/cam.png" >
+      <ul>
+      사업자 : 한국지엠주식회사 | 대표 : 로베르토 렘펠 | 사업자등록번호 : 122-81-74534
+주소 : 21334 인천광역시 부평구 부평대로 233 | 통신판매업신고 : 2016-인천부평-0902
+© GM KOREA. ALL RIGHTS RESERVED</ul>
+    
+    </footer>
+
+
+    <script>
+        var Myheader = document.getElementById("header");
+        
+        //mouse event
+        console.log(document.getElementById("header"));
+        document.getElementById("header").onmouseover = function(){
+            console.log(this);
+            console.log("Myheader");
+            document.getElementById("header").style.backgroundColor ="black";
+        }
+        document.getElementById("header").onmouseout = function(){
+            console.log("mouse out");
+            document.getElementById("header").style.backgroundColor =" rgba(0, 0, 0, 0.404)";
+        }
+        //스크롤 이벤트
+        window.addEventListener("scroll", function(){
+            console.log(window.scrollY);
+            if(window.scrollY >200){
+                console.log("220 이상");
+                //Myheader.style.height =0 + "px";   
+                //Myheader.style.top = -100 +"px";
+                Myheader.classList.add("down");
+                Myheader.classList.remove("up");
+                    
+                
+            }
+            else {
+                console.log("200 이하")
+                header.classList.add('header');
+                //Myheader.style.height =100 +"px"; 
+                //Myheader.style.top = 0 +"px";
+                Myheader.classList.remove("down");
+                Myheader.classList.add("up");
+                
+               
+            }
+            
+
+        });
+     
+
+
+    </script>
+   
+    
+</body>
+</html>

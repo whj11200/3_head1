@@ -1,0 +1,137 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아 집 가고 싶다 ㅎ</title>
+</head>
+<style>
+  
+    a{
+        color: white; text-decoration: none;
+        
+    }
+    a:hover{
+        color: red;
+    }
+  header {
+    overflow: hidden;
+    height: 100px; background-color: rgba(0, 0, 0, 0.404);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+   
+    
+  }
+  header.show {animation: headerShow 1s forwards; }
+header.hide {animation: headerHide 1s forwards; }
+  
+  
+  section{
+    height: 100vh; background-color: aqua;
+
+  }
+  section:nth-of-type(even){
+    background-color: rgb(107, 10, 10);
+  }
+  section:nth-child(2){
+    background-color: rgb(0, 243, 170);
+    
+  }
+  section:nth-of-type(1){
+    background-image: url(./imges/nhan-hoang-GmBGZnpom5Q-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  }
+  header.down {
+    top: -100px;
+  }
+  header.up{
+    top: 0px;
+  }
+  
+  footer {
+    background-color: gray; height: 200px;
+  }
+  body { margin: 0; padding: 0;}
+  header.over{
+    border-left-color: rgba(100, 104, 109, 0.329);
+  }
+  header.over h1 a{
+    color: black;
+  }
+  h2 {
+  text-align: center;
+  top: 1px;
+  color: white;
+}
+
+
+    </style>
+<body>      
+ 
+    <header id="header">
+        
+        <h1><a href="#"><img src="imges/CH2.png"></a></h1>
+        <h2><a href="#"> 차량목록</a></h2>
+        
+    </header>
+ 
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+
+
+    <script>
+        var Myheader = document.getElementById("header");
+        
+        //mouse event
+        console.log(document.getElementById("header"));
+        document.getElementById("header").onmouseover = function(){
+            console.log(this);
+            console.log("Myheader");
+            document.getElementById("header").style.backgroundColor ="black";
+        }
+        document.getElementById("header").onmouseout = function(){
+            console.log("mouse out");
+            document.getElementById("header").style.backgroundColor =" rgba(0, 0, 0, 0.404)";
+        }
+        //스크롤 이벤트
+        window.addEventListener("scroll", function(){
+            console.log(window.scrollY);
+            if(window.scrollY >200){
+                console.log("220 이상");
+                //Myheader.style.height =0 + "px";   
+                //Myheader.style.top = -100 +"px";
+                Myheader.classList.add("down");
+                Myheader.classList.remove("up");
+                    
+                
+            }
+            else {
+                console.log("200 이하")
+                header.classList.add('header');
+                //Myheader.style.height =100 +"px"; 
+                //Myheader.style.top = 0 +"px";
+                Myheader.classList.remove("down");
+                Myheader.classList.add("up");
+                
+               
+            }
+            
+
+        });
+     
+
+
+    </script>
+    
+</body>
+</html>
